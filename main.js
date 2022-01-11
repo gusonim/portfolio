@@ -80,11 +80,21 @@ const projects = document.querySelectorAll('.project');
 
 workBtnContianer.addEventListener('click',(e)=>{
     const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
-    if(filter==null) return;
+    if(filter==null) {return;}
     console.log(filter);
+
+    const active = document.querySelector('.category__btn.selected');
+    active.classList.remove('selected');
+    const target = e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
+    target.classList.add('selected');
+
+
+
+
+
     projectContainer.classList.add('ani-nout');
 
-    
+   
     setTimeout(()=>{
         projects.forEach((project)=>{
             if(filter==='*' || filter === project.dataset.filter){
