@@ -100,8 +100,19 @@ h1 {
     align-items: center;
     color: var(--color-white);
     padding: 16px;
-    background-color: var(--color-pink);
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    transition: all val(--animation-duration) ease-in-out;
 }
+
+#navbar.navbar--dark{
+
+    background-color: var(--color-pink);
+    padding: 8px;
+
+}
+
 
 .navbar__menu{
     display: flex;
@@ -152,6 +163,7 @@ h1 {
     background: url('images/home-background.png') center/cover no-repeat;
     padding: 40px;
     text-align: center;
+    padding-top: 140px;
 
 }
 
