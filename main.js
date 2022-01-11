@@ -16,6 +16,7 @@ document.addEventListener('scroll',()=>{
 
 
 
+
 // handle-scrolling
 
 
@@ -29,11 +30,19 @@ navbarMenu.addEventListener('click',(event)=>{
         return;
     }
 
-    console.log(link);
-
+    navbarMenu.classList.remove('open');
     const scrollTo = document.querySelector(link);
     scrollTo.scrollIntoView({behavior:'smooth'});
 });
+
+
+// navbar toggle btn for small screen
+
+const navbar__toggle = document.querySelector('.navbar__toggle');
+navbar__toggle.addEventListener('click',()=>{
+    navbarMenu.classList.toggle('open');
+})
+
 
 
 // handle clik on 'contact me' btn on home
@@ -53,6 +62,9 @@ document.addEventListener('scroll',()=>{
     home.style.opacity=1-window.scrollY/homeHeight;
     
 });
+
+
+
 
 // show arrow-up 
 const arrowUp = document.querySelector('.arrow-up')
