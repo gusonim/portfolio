@@ -217,64 +217,76 @@
     <div class="section__container">
       <h1>My work</h1>
       <h3>Projets</h3>
-      <div class="work__categories">
-        <button class="category__btn active">All <span class="category__count">8</span></button>
-        <button class="category__btn">Froend <span class="category__count">3</span></button>
-        <button class="category__btn">Back-end <span class="category__count">3</span></span></button>
-        <button class="category__btn">Mobile <span class="category__count">2</span></button>
+      <div class="work__categories"
+     >
+        <button class="category__btn active"
+        data-filter="*">All <span class="category__count">8</span></button>
+        <button class="category__btn"
+        data-filter="Front-end">Front-end <span class="category__count">3</span></button>
+        <button class="category__btn"
+        data-filter="Back-end">Back-end <span class="category__count">3</span></span></button>
+        <button class="category__btn"
+        data-filter="Mobile">Mobile <span class="category__count">2</span></button>
       </div>
   
       <div class="work__projects">
-        <a href="#" class="project" target="blank">
+        <a href="#" class="project" target="blank"  data-filter="Front-end">
           <img src="images/projets/project1.png" alt="" class="project-img">
           <div class="project__description">
             <h3>youtube Site</h3>
             <span>clone coding with html</span>
           </div>
         </a>
-        <a href="#" class="project" target="blank">
+        <a href="#" class="project" target="blank"
+        data-filter="Front-end">
           <img src="images/projets/project2.png" alt="" class="project-img">
           <div class="project__description">
             <h3>youtube Site</h3>
             <span>clone coding with html</span>
           </div>
         </a>
-        <a href="#" class="project" target="blank" >
+        <a href="#" class="project" target="blank"
+        data-filter="Front-end" >
           <img src="images/projets/project3.png" alt="" class="project-img">
           <div class="project__description">
             <h3>youtube Site</h3>
             <span>clone coding with html</span>
           </div>
         </a>
-        <a href="#" class="project" target="blank">
+        <a href="#" class="project" target="blank"
+        data-filter="Back-end">
           <img src="images/projets/project4.png" alt="" class="project-img">
           <div class="project__description">
             <h3>youtube Site</h3>
             <span>clone coding with html</span>
           </div>
         </a>
-        <a href="#" class="project" target="blank">
+        <a href="#" class="project" target="blank"
+        data-filter="Back-end">
           <img src="images/projets/project5.png" alt="" class="project-img">
           <div class="project__description">
             <h3>youtube Site</h3>
             <span>clone coding with html</span>
           </div>
         </a>
-        <a href="#" class="project" target="blank">
+        <a href="#" class="project" target="blank"
+        data-filter="Back-end">
           <img src="images/projets/project6.png" alt="" class="project-img">
           <div class="project__description">
             <h3>youtube Site</h3>
             <span>clone coding with html</span>
           </div>
         </a>
-        <a href="#" class="project" target="blank">
+        <a href="#" class="project" target="blank"
+        data-filter="Mobile">
           <img src="images/projets/project7.png" alt="" class="project-img">
           <div class="project__description">
             <h3>youtube Site</h3>
             <span>clone coding with html</span>
           </div>
         </a>
-        <a href="#" class="project" target="blank">
+        <a href="#" class="project" target="blank"
+        data-filter="Mobile">
           <img src="images/projets/project8.png" alt="" class="project-img">
           <div class="project__description">
             <h3>youtube Site</h3>
@@ -328,6 +340,11 @@
     
 
   </section>
+
+  <!-- arrow up -->
+  <button class="arrow-up">
+    <i class="fa fa-arrow-up" aria-hidden="true"></i>
+  </button>
 
 
 

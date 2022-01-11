@@ -54,6 +54,55 @@ document.addEventListener('scroll',()=>{
     
 });
 
+// show arrow-up 
+const arrowUp = document.querySelector('.arrow-up')
+document.addEventListener('scroll',()=>{
+    if(window.scrollY>homeHeight/2){
+        arrowUp.classList.add('visible');
+    }
+    else{
+        arrowUp.classList.remove('visible');
+    }
+})
+
+// handle scroll on the 
+arrowUp.addEventListener('click',()=>{
+    scrollIntoView('#home')
+});
+
+
+// projects
+
+const workBtnContianer = document.querySelector('.work__categories');
+const projectContainer = document.querySelector('.work__projects');
+const projects = document.querySelectorAll('.project');
+
+
+workBtnContianer.addEventListener('click',(e)=>{
+    const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
+    if(filter==null) return;
+    console.log(filter);
+    projectContainer.classList.add('ani-nout');
+
+    
+    setTimeout(()=>{
+        projects.forEach((project)=>{
+            if(filter==='*' || filter === project.dataset.filter){
+                project.classList.remove('invisible');
+            }
+            else{
+                project.classList.add('invisible');
+            }
+        });            
+        projectContainer.classList.remove('ani-nout');
+    },300);
+});
+
+
+
+
+
+
 
 
 
