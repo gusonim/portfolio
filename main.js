@@ -4,8 +4,6 @@ const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
 
 document.addEventListener('scroll',()=>{
-    console.log(window.scrollY);
-    console.log(navbarHeight);
 
     if(window.scrollY > navbarHeight){
         navbar.classList.add('navbar--dark');
@@ -46,9 +44,24 @@ homeContactBtn.addEventListener('click',()=>{
     
 });
 
+// make home slowly fade to transeparent
+
+const home = document.querySelector('.home__container');
+const homeHeight = home.getBoundingClientRect().height;
+
+document.addEventListener('scroll',()=>{
+    home.style.opacity=1-window.scrollY/homeHeight;
+    
+});
+
+
+
 
 function scrollIntoView(selector){
     const scrolllTo = document.querySelector(selector);
     scrolllTo.scrollIntoView({behavior:'smooth'});
 }
+
+
+
 
