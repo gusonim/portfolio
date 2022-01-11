@@ -44,7 +44,7 @@
   </section>
 
   <!-- about -->
-  <section id="about" class="section">
+  <section id="about" class="section section__container">
     <h1>About me</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero pariatur magni facere dolores, aliquam aperiam quam architecto velit temporibus at neque. Explicabo earum quasi doloribus, deleniti tempore exercitationem sunt similique?</p>
 
@@ -103,7 +103,8 @@
 
   <!-- Skills -->
   <section id="skills" class="section">
-    <h1>Skills</h1>
+    <div class="section__container">
+      <h1>Skills</h1>
     <h2>Skills & Attributes</h2>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nesciunt fugiat quia perspiciatis ab enim laboriosam, ducimus sit a molestias aspernatur explicabo non neque aliquid at excepturi iusto tenetur dicta.
@@ -116,141 +117,150 @@
           <div class="skill_description">
             <span>HTML</span>
             <span>99%</span>
-            <div class="skill__bar">
-              <div class="skill__value"></div>
-            </div>
+           
+          </div>
+          <div class="skill__bar">
+            <div class="skill__value" style="width: 99%;"></div>
           </div>
         </div>
         <div class="skill">
           <div class="skill_description">
             <span>css</span>
-            <span>99%</span>
-            <div class="skill__bar">
-              <div class="skill__value"></div>
-            </div>
+            <span>90%</span>
+            
+          </div>
+          <div class="skill__bar">
+            <div class="skill__value" style="width: 90%"></div>
           </div>
         </div>
         <div class="skill">
           <div class="skill_description">
             <span>javascript</span>
             <span>79%</span>
-            <div class="skill__bar">
-              <div class="skill__value"></div>
-            </div>
+            
+          </div>
+          <div class="skill__bar">
+            <div class="skill__value" style="width: 79%"></div>
           </div>
         </div>
         <div class="skill">
           <div class="skill_description">
             <span>react</span>
             <span>90%</span>
-            <div class="skill__bar">
-              <div class="skill__value"></div>
-            </div>
+            
+          </div>
+          <div class="skill__bar">
+            <div class="skill__value"
+            style="width: 90%""></div>
           </div>
         </div>
         <div class="skill">
           <div class="skill_description">
             <span>node.js</span>
             <span>80%</span>
-            <div class="skill__bar">
-              <div class="skill__value"></div>
-            </div>
+            
+          </div>
+          <div class="skill__bar">
+            <div class="skill__value" style="width: 80%"></div>
           </div>
         </div>
         </div>
+        <div class="skillset__right">
+          <div class="tools">
+            <h3 class="skillset__title">Tools</h3>
+            <ul class="tools__list">
+              <li><span>visual Studio</span></li>
+              <li><span>ios</span></li>
+              <li><span>submarine</span></li>
+              <li><span>sfjkskjf</span></li>
+              <li><span>sdfsdf</span></li>
+              <li><span>sdfsdf</span></li>
+            </ul>
+  
+          </div>
+          <div class="Etc">
+            <h3 class="skillset__title">Etc</h3>
+            <ul class="etc__list">
+              <li><span>Git</span></li>
+              <li><span>Scrum</span></li>
+              <li><span>sfsfsdsf</span></li>
+            </ul>
+          </div>
       </div>
-      <div class="skillset__right">
-        <div class="tools">
-          <h3 class="skillset__title">Tools</h3>
-          <ul class="tools__list">
-            <li><span>visual Studio</span></li>
-            <li><span>ios</span></li>
-            <li><span>submarine</span></li>
-            <li><span>sfjkskjf</span></li>
-            <li><span>sdfsdf</span></li>
-            <li><span>sdfsdf</span></li>
-          </ul>
-
-        </div>
-        <div class="Etc">
-          <h3 class="skillset__title">Etc</h3>
-          <ul class="etc__list">
-            <li><span>Git</span></li>
-            <li><span>Scrum</span></li>
-            <li><span>sfsfsdsf</span></li>
-          </ul>
-        </div>
+      
+      
       </div>
+     
     </div>
 
+    </div>
+    
+ </section>
 
 
-
-
-  </section>
   <!-- Work -->
   <section id="work" class="section">
     <h1>My work</h1>
     <h3>Projets</h3>
     <div class="work__categories">
-      <button class="categorie__btn">All <span class="category__count">8</span></button>
-      <button class="categorie__btn">Fro <span class="category__count">3</span></button>
-      <button class="categorie__btn">Back-end <span class="category__count">3</span>8</span></button>
-      <button class="categorie__btn">Mobile <span class="category__count">2</span></button>
+      <button class="category__btn active">All <span class="category__count">8</span></button>
+      <button class="category__btn">Froend <span class="category__count">3</span></button>
+      <button class="category__btn">Back-end <span class="category__count">3</span></span></button>
+      <button class="category__btn">Mobile <span class="category__count">2</span></button>
     </div>
 
     <div class="work__projects">
       <a href="#" class="project" target="blank">
-        <img src="images/projets/project1.png" alt="">
+        <img src="images/projets/project1.png" alt="" class="project-img">
         <div class="project__description">
           <h3>youtube Site</h3>
           <span>clone coding with html</span>
         </div>
       </a>
       <a href="#" class="project" target="blank">
-        <img src="images/projets/project2.png" alt="">
+        <img src="images/projets/project2.png" alt="" class="project-img">
+        <div class="project__description">
+          <h3>youtube Site</h3>
+          <span>clone coding with html</span>
+        </div>
+      </a>
+      <a href="#" class="project" target="blank" >
+        <img src="images/projets/project3.png" alt="" class="project-img">
         <div class="project__description">
           <h3>youtube Site</h3>
           <span>clone coding with html</span>
         </div>
       </a>
       <a href="#" class="project" target="blank">
-        <img src="images/projets/project3.png" alt="">
+        <img src="images/projets/project4.png" alt="" class="project-img">
         <div class="project__description">
           <h3>youtube Site</h3>
           <span>clone coding with html</span>
         </div>
       </a>
       <a href="#" class="project" target="blank">
-        <img src="images/projets/project4.png" alt="">
+        <img src="images/projets/project5.png" alt="" class="project-img">
         <div class="project__description">
           <h3>youtube Site</h3>
           <span>clone coding with html</span>
         </div>
       </a>
       <a href="#" class="project" target="blank">
-        <img src="images/projets/project5.png" alt="">
+        <img src="images/projets/project6.png" alt="" class="project-img">
         <div class="project__description">
           <h3>youtube Site</h3>
           <span>clone coding with html</span>
         </div>
       </a>
       <a href="#" class="project" target="blank">
-        <img src="images/projets/project6.png" alt="">
+        <img src="images/projets/project7.png" alt="" class="project-img">
         <div class="project__description">
           <h3>youtube Site</h3>
           <span>clone coding with html</span>
         </div>
       </a>
       <a href="#" class="project" target="blank">
-        <img src="images/projets/project7.png" alt="">
-        <div class="project__description">
-          <h3>youtube Site</h3>
-          <span>clone coding with html</span>
-        </div>
-      </a>
-      <a href="#" class="project" target="blank">
-        <img src="images/projets/project8.png" alt="">
+        <img src="images/projets/project8.png" alt="" class="project-img">
         <div class="project__description">
           <h3>youtube Site</h3>
           <span>clone coding with html</span>
