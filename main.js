@@ -38,3 +38,17 @@ navbarMenu.addEventListener('click',(event)=>{
 });
 
 
+// handle clik on 'contact me' btn on home
+
+const homeContactBtn = document.querySelector('.home__contact');
+homeContactBtn.addEventListener('click',()=>{
+    scrollIntoView('#contact');
+    
+});
+
+
+function scrollIntoView(selector){
+    const scrolllTo = document.querySelector(selector);
+    scrolllTo.scrollIntoView({behavior:'smooth'});
+}
+
